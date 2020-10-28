@@ -22,7 +22,7 @@ class App extends Component {
             {this.props.loading === true
               ? null
               : <div>
-                  <Router path='/' exact component={Dashboard} />
+                  <Route path='/' exact component={Dashboard} />
                   <Route path='/twet/:id' component={TweetPage} />
                   <Route path='/new' component={NewTweet} />
                 </div>
